@@ -500,8 +500,11 @@ const Sobre = () => {
           <h2 className="text-4xl font-bold text-primary mb-6">
             Faça Parte da Nossa História
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Junte-se a milhares de profissionais que já descobriram como a união faz a força
+          <div className="flex justify-center mb-4">
+            <Handshake className="h-16 w-16 text-accent" />
+          </div>
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto font-semibold">
+            A União Faz a Força
           </p>
           <Link to="/associacao">
             <Button className="btn-accent px-8 py-4 text-lg font-bold rounded-xl hover:scale-105 transition-transform">
