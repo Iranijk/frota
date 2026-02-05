@@ -836,10 +836,12 @@ const Associacao = () => {
                   Nossa equipe está disponível no WhatsApp para tirar suas dúvidas
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-white text-secondary hover:bg-white/90 px-6 py-3">
-                    <MessageCircle className="mr-2 h-4 w-4" />
-                    Chamar no WhatsApp
-                  </Button>
+                  <a href="https://wa.me/5567984678018" target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-white text-secondary hover:bg-white/90 px-6 py-3">
+                      <MessageCircle className="mr-2 h-4 w-4" />
+                      Chamar no WhatsApp
+                    </Button>
+                  </a>
                   <a href="https://wa.me/5567984678018" target="_blank" rel="noopener noreferrer">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white border-none px-6 py-3">
                       <Clock className="mr-2 h-4 w-4" />
