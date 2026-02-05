@@ -776,8 +776,8 @@ const Associacao = () => {
                           </label>
                         </div>
 
-                        <Button type="submit" className="btn-accent px-8 py-3 font-bold w-full lg:w-auto" disabled={isLoading}>
-                          {isLoading ? 'Enviando...' : 'Associar-se Agora'}
+                        <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 font-bold w-full lg:w-auto transition-colors" disabled={isLoading}>
+                          {isLoading ? 'Enviando...' : 'Finalizar'}
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </div>
