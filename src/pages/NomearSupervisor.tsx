@@ -87,6 +87,28 @@ const NomearSupervisor = () => {
 
             if (error) throw error;
 
+            // Inserir na tabela posicoes_rede
+            const cepPrefix = associate.cep ? associate.cep.replace(/\D/g, '').substring(0, 5) : '';
+            const { error: errorRede } = await supabase
+                .from('posicoes_rede')
+                .insert({
+                    associado_id: associate.cpf, // Usando CPF conforme padrão solicitado
+                    cargo_id: 'Supervisor',
+                    superior_id: localStorage.getItem('user_cpf'),
+                    territorio_id: cepPrefix,
+                    ativo: true,
+                    data_inicio: new Date().toISOString()
+                });
+
+            if (errorRede) {
+                console.error("Erro ao criar posição na rede:", errorRede);
+                toast({
+                    title: "Atenção",
+                    description: "Supervisor nomeado, mas houve erro ao criar posição na rede.",
+                    variant: "destructive"
+                });
+            }
+
             toast({
                 title: "Nomeação Concluída! 🏆",
                 description: `${associate.nome} agora é um Supervisor.`,
