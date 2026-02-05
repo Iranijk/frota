@@ -111,6 +111,7 @@ const Login = () => {
                   required
                   className="mt-2"
                   maxLength={14}
+                  autoFocus
                 />
               </div>
 
