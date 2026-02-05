@@ -37,7 +37,7 @@ const Sobre = () => {
     {
       year: '2022',
       title: 'Fundação da Associação',
-      description: 'Donner de Souza funda a Associação Frota Brasil com o sonho de apoiar caminhoneiros brasileiros.',
+      description: 'Inicia-se o Movimento Nacional levantando a nossa bandeira.',
       icon: Users
     },
     {
