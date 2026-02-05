@@ -81,6 +81,9 @@ const Login = () => {
         title: "Login realizado com sucesso!",
         description: "Bem-vindo de volta.",
       });
+      // Salvar CPF para uso posterior (ex: nomeação)
+      localStorage.setItem('user_cpf', data.cpf);
+
       // Aqui você pode redirecionar para uma página de dashboard ou área do associado
       navigate('/');
     }

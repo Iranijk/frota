@@ -80,7 +80,8 @@ const NomearSupervisor = () => {
                 .from('associados')
                 .update({
                     nomeado: true,
-                    nomeacao: 'Supervisor'
+                    nomeacao: 'Supervisor',
+                    indicador_id: localStorage.getItem('user_cpf')
                 })
                 .eq('id', associate.id);
 
