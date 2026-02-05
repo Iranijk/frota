@@ -408,7 +408,7 @@ const Sobre = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">25.000+</div>
+              <div className="text-4xl font-bold text-accent mb-2">130.000+</div>
               <div className="text-lg">Associados Ativos</div>
             </div>
             <div className="text-center">
